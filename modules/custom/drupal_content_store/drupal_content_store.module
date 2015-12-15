@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains drupal_content_store.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function drupal_content_store_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the drupal_content_store module.
+    case 'help.page.drupal_content_store':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom endpoints for REST API.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function drupal_content_store_theme() {
+  $theme = [];
+
+  return $theme;
+}

@@ -1,0 +1,5 @@
+name: Drupal Content Store
+type: module
+description: Custom endpoints for REST API.
+core: 8.x
+package: Zaizi Drupal 8 Modules
